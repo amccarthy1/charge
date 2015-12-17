@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function(sequelize, DataTypes) {
   var ChannelType = sequelize.define('ChannelType', {
     service: DataTypes.STRING

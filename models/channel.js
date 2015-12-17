@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function(sequelize, DataTypes) {
   var Channel = sequelize.define('Channel', {
     username: DataTypes.STRING
@@ -6,6 +7,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         Channel.belongsTo(models.ChannelType);
+        Channel.hasMany(models.Event);
       }
     }
   });
