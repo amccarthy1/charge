@@ -16,7 +16,8 @@ These instructions will ask you to install some packages globally. If you're fam
 
 ### Project Set-Up
 #### Installing Dependencies
- - Install project dependencies with `npm install`
+ - Install project dependencies with `npm install`.
+
 #### Database Initialization
  - Create a file `config/config.json` with your database information (and credentials, if required)
  - Install the sequelize cli (This will help you run migrations).
