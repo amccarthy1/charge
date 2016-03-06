@@ -1,0 +1,19 @@
+{
+  "name": "charge",
+  "description": "Directory of Charity Livestreams",
+  "main": "app.js",
+  "authors": [
+    "Adam McCarthy <amccarthy@mail.rit.edu>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/amccarthy1/charge",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
