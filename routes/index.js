@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/channel', function(req, res, next) {
-  res.render('channel', { username: 'test' });
+router.get('/channel/:username', function(req, res, next) {
+  res.render('channel', { username: req.params.username });
 })
 
 module.exports = router;
