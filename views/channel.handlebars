@@ -1,5 +1,5 @@
 <h1>{{username}}'s channel</h1>
 <div id="stream">
-  {{> twitch/stream}}
-  {{> twitch/chat}}
+  {{> (lookup . 'stream')}}
+  {{> (lookup . 'chat')}}
 </div>

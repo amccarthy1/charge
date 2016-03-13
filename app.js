@@ -18,6 +18,7 @@ app.engine('handlebars', handlebars({
         'views/partials'
     ]
 }));
+
 app.set('view engine', 'handlebars');
 
 // uncomment after placing your favicon in /public
