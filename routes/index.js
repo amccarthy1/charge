@@ -9,6 +9,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/channel/:service/:username', channel.byNameService)
-
+router.get('/channel/:service/:username', channel.byNameService);
+router.get('/channel/:id', channel.byId);
 module.exports = router;

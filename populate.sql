@@ -13,5 +13,6 @@ INSERT INTO ChannelTypes (id, service, createdAt, updatedAt) VALUES (3, 'youtube
 DELETE FROM Channels;
 INSERT INTO Channels (username, ChannelTypeId, createdAt, updatedAt) VALUES ('GamesDoneQuick', 1, DATE('now'), DATE('now'));
 INSERT INTO Channels (username, ChannelTypeId, createdAt, updatedAt) VALUES ('extralife4kids', 1, DATE('now'), DATE('now'));
+INSERT INTO Channels (username, ChannelTypeId, createdAt, updatedAt) VALUES ('wolfpackgaming', 2, DATE('now'), DATE('now'));
 
 -- TODO add some sample events
