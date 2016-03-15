@@ -7,18 +7,23 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var helpers = require('./helpers');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars({
+var hbs = handlebars.create({
     defaultLayout: 'base',
     partialsDir: [
         'views/partials'
     ]
-}));
-
+});
+hbs.getPartials().then(function(partials) {
+  hbs.partials = partials;
+  hbs.helpers = helpers.getHelpers(hbs);
+});
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 // uncomment after placing your favicon in /public

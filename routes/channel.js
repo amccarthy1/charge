@@ -15,14 +15,8 @@ function chat(service) {
 }
 
 function renderChannel(res, channel) {
-  var _username = channel.dataValues.username;
-  var _service = channel.ChannelType.dataValues.service;
   res.render('channel', {
-    username: _username,
-    channel: _username,
-    service: _service,
-    stream: stream(_service),
-    chat: chat(_service)
+    channel: channel
   });
 }
 

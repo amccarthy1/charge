@@ -1,5 +1,5 @@
-<h1>{{username}}'s channel</h1>
+<h1>{{channel.dataValues.username}}'s channel</h1>
 <div id="stream">
-  {{> (lookup . 'stream')}}
-  {{> (lookup . 'chat')}}
+  {{{embedStream channel}}}
+  {{{embedChat channel}}}
 </div>
