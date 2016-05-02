@@ -1,4 +1,5 @@
 var embedHelpers = require('./embed');
+var utilHelpers = require('./util');
 
 function wrap(func, hbs) {
   return function() {
@@ -16,6 +17,7 @@ function register(hbs, helperFile, helpers) {;
 
 function registerHelpers(hbs, helpers) {
   register(hbs, embedHelpers, helpers);
+  register(hbs, utilHelpers, helpers);
 }
 
 function getHelpers(handlebars) {

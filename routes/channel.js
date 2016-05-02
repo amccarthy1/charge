@@ -16,7 +16,10 @@ function chat(service) {
 
 function renderChannel(res, channel) {
   res.render('channel', {
-    channel: channel
+    channel: {
+      username: channel.getDataValue("username"),
+      service: channel.ChannelType.getDataValue("service")
+    }
   });
 }
 
